@@ -1,5 +1,5 @@
 return {
-    updateInterval = 5, -- how often to update player data in minutes
+    updateInterval = 1, -- how often to update player data in minutes
 
     money = {
         ---@alias MoneyType 'cash' | 'bank' | 'crypto'
@@ -102,11 +102,11 @@ return {
     -- this configuration is for core events only. putting other webhooks here will have no effect
     logging = {
         webhook = {
-            ['default'] = nil, -- default
-            ['joinleave'] = nil, -- default
-            ['ooc'] = nil, -- default
-            ['anticheat'] = nil, -- default
-            ['playermoney'] = nil, -- default
+            ['default'] = 'https://discord.com/api/webhooks/1314453725829664812/am-YoIUqM8atuj1YcZUBxCQpGAEg8Py2Z4oghL_vJdVK1fVJZSR5qhz_a7SMe3NCOLF6', -- default
+            ['joinleave'] = 'https://discord.com/api/webhooks/1314453934164676668/Ma2W1rXrjTJjUcCtS1ZbXsj4VW3P52ZL8_pzk26Oa63lEvDf1nhALiykPTej4iz0DO_Y', -- default
+            ['ooc'] = 'https://discord.com/api/webhooks/1314454148787474473/zko4syyuSMusKwOlcQonaLOsH38JZtDInnoC8Av84mIRRDaCM_T0UycmRLyr8iw2Mcxm', -- default
+            ['anticheat'] = 'https://discord.com/api/webhooks/1314454152088391792/pQpXyhRaS7jVhLb87Glq0KylgdXbkRAHOTCHVVxm6zmBzJY4jT7fIbnHa6wr8mPEhhfG', -- default
+            ['playermoney'] = 'https://discord.com/api/webhooks/1314454295613145098/r2n3LpvCp-vJ8VM0USjJSrr853RgvLYnBI6JQcL-FKwMhVcSfDqJFc_3i5uJRaQU6H6o', -- default
         },
         role = {} -- Role to tag for high priority logs. Roles use <@%roleid> and users/channels are <@userid/channelid>
     },
